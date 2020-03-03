@@ -1,1 +1,1 @@
-# learning-express-signed-cookies-localhost
+# Express with JWT stored on Signed Cookie

@@ -1,0 +1,21 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.nodePath": ".vscode/pnpify",
+  "prettier.prettierPath": ".vscode/pnpify/prettier/index.js",
+  "typescript.tsdk": ".vscode/pnpify/typescript/lib",
+  "files.exclude": {
+    ".vscode": true,
+    ".yarn": true,
+    ".*ignore": true,
+    ".*rc*": true,
+    "*.config.*": true,
+    ".env*": true,
+    ".pnp.*": true,
+    "dist": true,
+    "LICENSE": true,
+    "tsconfig.*": true,
+    "yarn.lock": true
+  }
+}
