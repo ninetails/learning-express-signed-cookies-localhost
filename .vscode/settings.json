@@ -6,6 +6,7 @@
   "prettier.prettierPath": ".vscode/pnpify/prettier/index.js",
   "typescript.tsdk": ".vscode/pnpify/typescript/lib",
   "files.exclude": {
+    ".insomnia": true,
     ".vscode": true,
     ".yarn": true,
     ".*ignore": true,

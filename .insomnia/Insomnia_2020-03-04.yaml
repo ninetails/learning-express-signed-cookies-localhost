@@ -1,0 +1,115 @@
+_type: export
+__export_format: 4
+__export_date: 2020-03-05T00:46:03.084Z
+__export_source: insomnia.desktop.app:v7.1.1
+resources:
+  - _id: req_3b4c9e8a095846bf8a703187832d70eb
+    authentication: {}
+    body: {}
+    created: 1583341267177
+    description: ""
+    headers:
+      - description: ""
+        disabled: false
+        id: pair_69926bfee02d4fe8b9a13ab5413499a3
+        name: Cookie
+        value: "{% response 'header', 'req_f83463ad3ebe48f5867e862e2337814d',
+          'b64::U2V0LUNvb2tpZQ==::46b', 'never' %}"
+      - description: ""
+        id: pair_1c9716f28fb14b80b01873658f47abfc
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1583341267177
+    method: GET
+    modified: 1583368268869
+    name: /books
+    parameters: []
+    parentId: wrk_1eff47c13a294205a67956e7a19891f4
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ baseUrl  }}/books"
+    _type: request
+  - _id: wrk_1eff47c13a294205a67956e7a19891f4
+    created: 1583282304141
+    description: ""
+    modified: 1583282304140
+    name: Test Cookie
+    parentId: null
+    _type: workspace
+  - _id: req_f83463ad3ebe48f5867e862e2337814d
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"username": "john",
+        	"password": "password123admin"
+        }
+    created: 1583282326743
+    description: ""
+    headers:
+      - id: pair_5f31f36535434d59aa33908dd5c77425
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1583282326743
+    method: POST
+    modified: 1583282489687
+    name: /login
+    parameters: []
+    parentId: wrk_1eff47c13a294205a67956e7a19891f4
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ baseUrl  }}/login"
+    _type: request
+  - _id: env_6d9aeb699873028bc2c944ba43af9e476a75871d
+    color: null
+    created: 1583282304222
+    data: {}
+    dataPropertyOrder: null
+    isPrivate: false
+    metaSortKey: 1583282304222
+    modified: 1583282304222
+    name: Base Environment
+    parentId: wrk_1eff47c13a294205a67956e7a19891f4
+    _type: environment
+  - _id: jar_6d9aeb699873028bc2c944ba43af9e476a75871d
+    cookies:
+      - creation: 2020-03-04T00:41:31.207Z
+        domain: localhost
+        expires: 2020-03-05T00:31:17.000Z
+        hostOnly: true
+        httpOnly: true
+        id: "2861532791850139"
+        key: jwt
+        lastAccessed: 2020-03-05T00:31:17.533Z
+        path: /
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG4iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE1ODMzNjgyNzd9.SPQ14-N6dKRlAuPRPYDg9vAGYS3YRrHQ-AaODdtBfBI
+    created: 1583282304224
+    modified: 1583368277533
+    name: Default Jar
+    parentId: wrk_1eff47c13a294205a67956e7a19891f4
+    _type: cookie_jar
+  - _id: env_629e7c44c7e8400392d6db1c156e82da
+    color: null
+    created: 1583282345327
+    data:
+      baseUrl: http://localhost:5000
+    dataPropertyOrder:
+      "&":
+        - baseUrl
+    isPrivate: true
+    metaSortKey: 1583282345327
+    modified: 1583282382876
+    name: Local
+    parentId: env_6d9aeb699873028bc2c944ba43af9e476a75871d
+    _type: environment
